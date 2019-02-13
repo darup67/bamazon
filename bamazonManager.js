@@ -1,19 +1,12 @@
-//=================================Setup Required Variables===============================
-
 var Table = require('cli-table');
 var mysql = require('mysql');
 var inquirer = require('inquirer');
 
-//=================================Connect to SQL database===============================
 
 var connection = mysql.createConnection({
     host: "localhost",
     port: 3306,
-
-    // Your username
     user: "root",
-
-    // Your password
     password: "Z",
     database: "bamazonDB"
 });
@@ -24,7 +17,6 @@ connection.connect(function(err) {
     startPrompt();
 });
 
-//=================================Inquirer introduction===============================
 
 function startPrompt() {
 
@@ -48,11 +40,9 @@ function startPrompt() {
     });
 }
 
-//=================================View Inventory===============================
 
 function inventoryView() {
 
-    // instantiate
     var table = new Table({
         head: ['ID', 'Item', 'Department', 'Price', 'Stock'],
         colWidths: [10, 30, 30, 30, 30]
@@ -60,10 +50,8 @@ function inventoryView() {
 
     listInventory();
 
-    // table is an Array, so you can `push`, `unshift`, `splice` and friends
     function listInventory() {
 
-        //Variable creation from DB connection
 
         connection.query("SELECT * FROM products", function(err, res) {
             for (var i = 0; i < res.length; i++) {
@@ -88,9 +76,6 @@ function inventoryView() {
     }
 }
 
-//=================================View Low Inventory===============================
-
-//Connect to database to show any inventory with less than 5 in stock quantity
 
 function lowInventory() {
     // instantiate
@@ -101,13 +86,10 @@ function lowInventory() {
 
     listLowInventory();
 
-    // table is an Array, so you can `push`, `unshift`, `splice` and friends
     function listLowInventory() {
 
         connection.query("SELECT * FROM products", function(err, res) {
             for (var i = 0; i < res.length; i++) {
-
-                //check if any of the stock_quantity equals 5 or less
 
                 if (res[i].stock_quantity <= 5) {
 
@@ -132,7 +114,6 @@ function lowInventory() {
     }
 }
 
-//=================================Add Inventory===============================
 
 function addInventory() {
 
@@ -161,11 +142,9 @@ function addInventory() {
 }
 
 
-//=================================Add New Product===============================
 
 function addProduct() {
 
-    //ask user to fill in all necessary information to fill columns in table
 
     inquirer.prompt([{
 
@@ -191,7 +170,6 @@ function addProduct() {
 
     ]).then(function(managerNew) {
 
-        //connect to database, insert column data with input from user
 
         connection.query("INSERT INTO products SET ?", {
             product_name: managerNew.inputName,

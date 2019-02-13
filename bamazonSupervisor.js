@@ -2,13 +2,12 @@ var mysql = require('mysql');
 var inquirer = require('inquirer');
 var Table = require('easy-table');
 
-// Create connection to database.
 var connection = mysql.createConnection({
     host: 'localhost',
     port: 3306,
     user: "root",
     password: "admin",
-    database: "bamazon_db"
+    database: "bamazonDB"
 });
 
 connection.connect(function(err) {
@@ -52,7 +51,6 @@ function createDepartment() {
     })
 }
 
-// Function to view the departments sales
 function viewSales() {
     connection.query(`SELECT department_id, departments.department_name, departments.over_head_costs, SUM(product_sales) as product_sales, SUM(product_sales) - departments.over_head_costs as total_profit FROM departments JOIN products ON products.department_name = departments.department_name GROUP BY department_name ORDER BY department_id;`,
         function(err, resp) {
@@ -61,7 +59,7 @@ function viewSales() {
 }
 
 
-// Prints a table for the data
+
 function printTable(resp) {
     var data = resp;
     var t = new Table;
