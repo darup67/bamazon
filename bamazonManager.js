@@ -24,7 +24,7 @@ function startPrompt() {
 
         type: "list",
         name: "actionList",
-        message: "Welcome Manager. What would you like to review?",
+        message: "Welcome Manager. Please review.",
         choices: ["View Products For Sale", "View Low Inventory", "Add To Inventory", "Add New Product"]
 
     }]).then(function(user) {
