@@ -18,6 +18,7 @@
     },
     "dependencies": {
         "express": "^4.16.4",
+        "inquirer": "^6.2.2",
         "install": "^0.12.2",
         "sql": "^0.78.0"
     }
