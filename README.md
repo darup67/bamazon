@@ -31,7 +31,7 @@ Next, open up Bash or Terminal and run the following: "node bamazonCustomer.js".
 
 # Examples 
 
-Once the app is started you will be shown a pre-loaded list of products, item IDs, item quantity,  and their respective prices. Below you can find examples of how to use bamazon. 
+Once the app is started you will be shown a pre-loaded list of products, item IDs, item department, item quantity, and their respective prices. Below you can find examples of how to use bamazon. 
 
 # View Inventory 
 
