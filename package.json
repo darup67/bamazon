@@ -1,25 +1,26 @@
 {
-    "name": "package.json",
-    "version": "1.0",
-    "description": "Customer.js",
-    "author": "Dhruv Patel",
-    "keywords": [
-        "bamazon"
-    ],
-    "license": "unlicensed",
-    "main": "index.js",
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/darup67/bamazon.git"
-    },
-    "scripts": {
-        "test": "echo \"Error: no test specified\" && exit 1",
-        "prepublushOnly": "npm t"
-    },
-    "dependencies": {
-        "express": "^4.16.4",
-        "inquirer": "^6.2.2",
-        "install": "^0.12.2",
-        "sql": "^0.78.0"
-    }
+  "name": "bamazon",
+  "version": "1.0.0",
+  "description": "",
+  "main": "bamazonCustomer.js",
+  "dependencies": {
+    "express": "^4.16.4",
+    "inquirer": "^6.2.2",
+    "install": "^0.12.2",
+    "sql": "^0.78.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/darup67/bamazon.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/darup67/bamazon/issues"
+  },
+  "homepage": "https://github.com/darup67/bamazon#readme"
 }
