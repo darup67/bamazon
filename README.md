@@ -6,7 +6,7 @@
 
 This command line interface app allows users to purchase items off of a fictitious store called Bamazon. The app utilizes Node.js and MySQL. To begin, clone this repo into your local machine. Also, you will need "MySQL" and "Node.js" installed on your local machine.
 
-Open up Bash or Terminal and run "node bamazonCustomer.js"
+Open up Bash or Terminal and run "node bamazonCustomer.js" in the root of the repo/directory. 
 
 # Dependencies:
 
