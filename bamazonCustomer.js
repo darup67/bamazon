@@ -116,14 +116,14 @@ function selectionPrompt() {
                 if (userPurchase.inputNumber > res[i].stock_quantity) {
 
                     console.log("===================================================");
-                    console.log("Sorry! Not enough in stock. Please try again later.");
+                    console.log("Sorry! Not enough in stock. Please try again later!");
                     console.log("===================================================");
                     startPrompt();
 
                 } else {
 
                     console.log("===================================");
-                    console.log("Awesome! We can fulfull your order.");
+                    console.log("Awesome! Consider it done!");
                     console.log("===================================");
                     console.log("You've selected:");
                     console.log("----------------");
@@ -155,23 +155,22 @@ function confirmPrompt(newStock, purchaseId) {
         default: true
 
     }]).then(function(userConfirm) {
-        if (userConfirm.confirmPurchase === true) {
+            if (userConfirm.confirmPurchase === true) {
 
-            connection.query("UPDATE products SET ? WHERE ?", [{
-                stock_quantity: newStock
-            }, {
-                item_id: purchaseId
-            }], function(err, res) {});
+                connection.query("UPDATE products SET ? WHERE ?", [{
+                    stock_quantity: newStock
+                }, {
+                    item_id: purchaseId
+                }], function(err, res) {});
 
-            console.log("=================================");
-            console.log("Transaction completed. Thank you.");
-            console.log("=================================");
-            startPrompt();
-        } else {
-            console.log("=================================");
-            console.log("No worries. Maybe next time!");
-            console.log("=================================");
-            startPrompt();
-        }
-    });
-}
+                console.log("=================================");
+                console.log("Transaction completed. Thank you!");
+                console.log("=================================");
+                startPrompt();
+            } else {
+                console.log("=================================");
+                console.log("No worries. Try again soon!);
+                    console.log("================================="); startPrompt();
+                }
+            });
+    }
