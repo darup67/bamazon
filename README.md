@@ -4,9 +4,9 @@
 
 # About
 
-This command line interface app allows users to purchase items off of a fictitious store called Bamazon. The app utilizes Node.js and MySQL.
+This command line interface app allows users to purchase items off of a fictitious store called Bamazon. The app utilizes Node.js and MySQL. To begin, clone this repo into your local device. Also, you will need MySQL and Node.js installed.
 
-Dependencies:
+# Dependencies:
 
 Inquirer NPM
 
