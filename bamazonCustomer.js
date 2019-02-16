@@ -116,14 +116,14 @@ function selectionPrompt() {
                 if (userPurchase.inputNumber > res[i].stock_quantity) {
 
                     console.log("===================================================");
-                    console.log("Sorry! Not enough in stock. Please try again later!");
+                    console.log("Sorry! Insufficient quantity!");
                     console.log("===================================================");
                     startPrompt();
 
                 } else {
 
                     console.log("===================================");
-                    console.log("Awesome! Consider it done!");
+                    console.log("Great Choice!");
                     console.log("===================================");
                     console.log("You've selected:");
                     console.log("----------------");
@@ -169,7 +169,7 @@ function confirmPrompt(newStock, purchaseId) {
                 startPrompt();
             } else {
                 console.log("=================================");
-                console.log("No worries. Try again soon!);
+                console.log("No problem. Try again soon!);
                     console.log("================================="); startPrompt();
                 }
             });
