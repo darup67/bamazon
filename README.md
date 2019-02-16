@@ -1,5 +1,6 @@
 # bamazon
 
+![Cart](https://github.com/darup67/bamazon/blob/master/images/shoppingcart.jpeg)
 
 # About
 
@@ -10,6 +11,12 @@ Dependencies:
 Inquirer NPM
 
 MySQL NPM
+
+Technologies:
+
+MySQL
+
+Javascript
 
 Getting Started
 
@@ -25,4 +32,15 @@ To quit the program at any time, type ctrl + C.
 
 Once the app is started you will be shown a pre-loaded list of products, their Item IDs, and their prices. Below you can find examples of how to use bamazon. 
 
+# View Inventory 
+
 ![View Inventory](https://github.com/darup67/bamazon/blob/master/images/bamazoninventory.png)
+
+# Purchasing Items 
+
+![View Inventory](https://github.com/darup67/bamazon/blob/master/images/bamazonitempurchased.png)
+
+# MySQL Backend 
+
+![View Inventory](https://github.com/darup67/bamazon/blob/master/images/MySQL%20Inventory%20bamazon.png)
+
