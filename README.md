@@ -21,5 +21,8 @@ From here, start the app by typing into the command line node bamazonCustomer.js
 
 To quit the program at any time, type ctrl + C.
 
-Using the App
-Once the app is started you will be shown a pre-loaded list of products, their Item IDs, and their prices.
+# Examples 
+
+Once the app is started you will be shown a pre-loaded list of products, their Item IDs, and their prices. Below you can find examples of how to use bamazon. 
+
+![View Inventory](https://github.com/darup67/bamazon/blob/master/images/bamazoninventory.png)
