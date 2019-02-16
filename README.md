@@ -1,4 +1,4 @@
-# bamazon
+# bamazon shopping
 
 ![Cart](https://github.com/darup67/bamazon/blob/master/images/shoppingcart.jpeg)
 
