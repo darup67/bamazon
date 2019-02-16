@@ -155,22 +155,23 @@ function confirmPrompt(newStock, purchaseId) {
         default: true
 
     }]).then(function(userConfirm) {
-            if (userConfirm.confirmPurchase === true) {
+        if (userConfirm.confirmPurchase === true) {
 
-                connection.query("UPDATE products SET ? WHERE ?", [{
-                    stock_quantity: newStock
-                }, {
-                    item_id: purchaseId
-                }], function(err, res) {});
+            connection.query("UPDATE products SET ? WHERE ?", [{
+                stock_quantity: newStock
+            }, {
+                item_id: purchaseId
+            }], function(err, res) {});
 
-                console.log("=================================");
-                console.log("Transaction completed. Thank you!");
-                console.log("=================================");
-                startPrompt();
-            } else {
-                console.log("=================================");
-                console.log("No problem. Try again soon!);
-                    console.log("================================="); startPrompt();
-                }
-            });
-    }
+            console.log("=================================");
+            console.log("Transaction completed. Thank you!");
+            console.log("=================================");
+            startPrompt();
+        } else {
+            console.log("=================================");
+            console.log("No problem. Try again soon!");
+            console.log("=================================");
+            startPrompt();
+        }
+    });
+}
