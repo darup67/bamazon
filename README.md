@@ -10,13 +10,16 @@ Dependencies:
 
 Inquirer NPM
 
+CLI Table NPM
+
 MySQL NPM
 
-Technologies:
+# Technologies:
+
+Node.js
 
 MySQL
 
-Javascript
 
 Getting Started
 
