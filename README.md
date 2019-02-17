@@ -22,7 +22,7 @@ Node.js
 MySQL
 
 
-Getting Started
+# Getting Started
 
 First, download the repository. 
 
