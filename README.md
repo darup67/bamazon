@@ -1,5 +1,4 @@
-# bamazon shopping
-
+# Bamazon e-Commerce 
 ![Cart](https://github.com/darup67/bamazon/blob/master/images/shoppingcart.jpeg)
 
 # About
