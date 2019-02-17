@@ -40,7 +40,7 @@ Once the app is started you will be shown a pre-loaded list of products, item ID
 
 ![View Inventory](https://github.com/darup67/bamazon/blob/master/images/bamazonitempurchased.png)
 
-# MySQL Backend 
+# MySQL Server-side  
 
 ![View Inventory](https://github.com/darup67/bamazon/blob/master/images/MySQL%20Inventory%20bamazon.png)
 
