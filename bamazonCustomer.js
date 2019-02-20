@@ -64,7 +64,7 @@ function inventory() {
                 );
             }
             console.log("");
-            console.log("====================================================== Current Bamazon Inventory ======================================================");
+            console.log("====================================================== Current Bamazon Inventory =====================================================");
             console.log("");
             console.log(table.toString());
             console.log("");
