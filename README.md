@@ -9,17 +9,17 @@ This command line interface app allows users to purchase items off of a fictitio
 
 # Dependencies:
 
-Inquirer NPM
+:ballot_box_with_check: NPM
 
-CLI Table NPM
+:ballot_box_with_check: Table NPM
 
-MySQL NPM
+:ballot_box_with_check: NPM
 
 # Technologies:
 
-Node.js
+:ballot_box_with_check:.js
 
-MySQL
+:ballot_box_with_check:
 
 
 # Getting Started
