@@ -9,17 +9,19 @@ This command line interface app allows users to purchase items off of a fictitio
 
 # Dependencies:
 
-:ballot_box_with_check: NPM
+:ballot_box_with_check: Node.js NPM
 
 :ballot_box_with_check: Table NPM
 
-:ballot_box_with_check: NPM
+:ballot_box_with_check: MySQL NPM
 
 # Technologies:
 
-:ballot_box_with_check:.js
+:ballot_box_with_check: Node.js
 
-:ballot_box_with_check:
+:ballot_box_with_check: Javascript
+
+:ballot_box_with_check: mySQl
 
 
 # Getting Started
